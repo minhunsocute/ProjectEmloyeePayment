@@ -10,7 +10,7 @@ class EmployType {
 public:
 	static const int dailyemployees = 0;
 	static const int hourlyemployees = 1;
-	static const int productemployees = 2;
+	static const int productemployees = 2;	
 	static const int manager = 3;
 };
 
@@ -27,18 +27,9 @@ private:
 		_prototypes.push_back(new Manager());
 	}
 public: 
-	int suportedTypesCunt() {
-		return _prototypes.size();
-	}
+	int suportedTypesCunt();
 
-	Employ* creat(int type) {
-		return _prototypes.at(type);
-	}
-	static EmployFactory* instance() {
-		if (_instance == NULL) {
-			_instance = new EmployFactory();
-		}
-		return  _instance;
-	}
-	vector<Employ*> getProtoTypes() { return _prototypes; }
+	Employ* creat(int type);
+	static EmployFactory* instance();
+	vector<Employ*> getProtoTypes();
 };

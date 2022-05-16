@@ -144,6 +144,7 @@
     <ClInclude Include="Dailyemployees.h" />
     <ClInclude Include="Employ.h" />
     <ClInclude Include="Hourlyemployees.h" />
+    <ClInclude Include="listEmploy.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="Productemployees.h" />
     <ClInclude Include="EmployFactory.h" />

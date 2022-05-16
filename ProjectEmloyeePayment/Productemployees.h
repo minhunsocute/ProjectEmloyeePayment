@@ -6,10 +6,14 @@ private:
 	int _totalProducts;
 public:
 	Productemployees();
-	string toString();
+	Productemployees(string, double, int);
+
 	double paymentPerProduct();
 	int totalProducts();
 	void setPaymentPerProduct(double);
 	void setTotalProducts(int);
 	double calcuPayment();
+
+	string toString();
+	string className() { return "Productemployees"; }
 };

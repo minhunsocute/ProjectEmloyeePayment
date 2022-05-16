@@ -1,6 +1,8 @@
 #include "Manager.h"
 
 Manager::Manager(){}
+
+Manager::Manager(string name , double fixed , int total, double payment): Employ(name), _fixedPayment(fixed), _totalEmployees(total), _paymentPerEmployee(payment) {}
 double Manager::fixedPayment() { return _fixedPayment; }
 int Manager::totalEmployees() { return _totalEmployees; }
 double Manager::paymentPerEmployee() { return _paymentPerEmployee; }
@@ -18,6 +20,6 @@ double Manager::calcuPayment(){
 }
 string Manager::toString(){
 	stringstream builder;
-	builder << this->_name << "\t\t" << "Manager" << "\t\t" << calcuPayment() << "$\n";
+	builder <<left <<setw(10) << this->_name << "\t\t"<<left << setw(15) << "Manager" << "\t\t" << calcuPayment() <<"$\n";
 	return builder.str();
 }

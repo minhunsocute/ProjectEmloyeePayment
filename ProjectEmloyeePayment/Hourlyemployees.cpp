@@ -4,7 +4,7 @@ Hourlyemployees::Hourlyemployees() {
 	this->_hourlyPayment = 0;
 	this->_totalHours = 0;
 }
-
+Hourlyemployees::Hourlyemployees(string name, double d, int i):Employ(name), _hourlyPayment(d), _totalHours(i){}
 double Hourlyemployees::hourlyPayment() { return _hourlyPayment; }
 int Hourlyemployees::totalHours() { return _totalHours; }
 void Hourlyemployees::setHourlyPayment(double value){
@@ -18,6 +18,7 @@ double Hourlyemployees::calcuPayment(){
 }
 string Hourlyemployees::toString(){
 	stringstream builder;
-	builder << this->_name << "\t\t" << "Hourlyemployees" << "\t\t" << calcuPayment() << "$\n";
+	builder << left << setw(10) << this->_name << "\t\t" << left << setw(15) << "Hourlyemployees" << "\t\t" << calcuPayment() << "$\n";
+
 	return builder.str();
 }

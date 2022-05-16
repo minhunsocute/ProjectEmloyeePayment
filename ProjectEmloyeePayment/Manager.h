@@ -8,7 +8,8 @@ private:
 	double _paymentPerEmployee;
 public:
 	Manager();
-	double fixedPayment();
+	Manager(string, double, int, double);
+	double fixedPayment();	
 	int totalEmployees();
 	double paymentPerEmployee();
 	void setFixedPayment(double);
@@ -16,4 +17,5 @@ public:
 	void setPaymentPerEmployee(double);
 	double calcuPayment();
 	string toString();
+	string className() { return "Manager"; }
 };

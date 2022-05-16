@@ -4,6 +4,7 @@ Productemployees::Productemployees(){
 	this->_paymentPerProduct = 0;
 	this->_totalProducts = 0;
 }
+Productemployees::Productemployees(string name, double d, int i): Employ(name), _paymentPerProduct(d), _totalProducts(i) {}
 double Productemployees::paymentPerProduct() { return _paymentPerProduct; }
 int Productemployees::totalProducts() { return _totalProducts; }
 void Productemployees::setPaymentPerProduct(double value){
@@ -18,6 +19,7 @@ double Productemployees::calcuPayment(){
 }
 string Productemployees::toString() {
 	stringstream builder;
-	builder << this->_name << "\t\t" << "Productemployees" << "\t\t" << calcuPayment() << "$\n";
+	builder << left << setw(10) << this->_name << "\t\t" << left << setw(15) << "Productemployees" << "\t" << calcuPayment() << "$\n";
+
 	return builder.str();
 }
