@@ -3,16 +3,14 @@
 #include"Employ.h"
 class Dailyemployees:public Employ{
 private:
-	float _dailyPayment;
+	double _dailyPayment;
 	int _totalDays;
 public:
 	Dailyemployees();
-	Dailyemployees(float a, int b) ;
-	void setDailyPayment(float );
+	void setDailyPayment(double );
 	void setTotalDays(int );
-	float getDailyPayment();
+	double getDailyPayment();
 	int getTotalDays();
 	string toString();
-public:
-	~Dailyemployees();
+	double calcuPayment();
 };

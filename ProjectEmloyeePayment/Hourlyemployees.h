@@ -3,8 +3,14 @@
 
 class Hourlyemployees : public Employ {
 private:
-	float _hourlyPayment;
+	double _hourlyPayment;
 	int  _totalHours;
 public:
-	Hourlyemployees(){};
+	Hourlyemployees();
+	double hourlyPayment();
+	int totalHours();
+	void setHourlyPayment(double);
+	void setTotalHours(int);
+	double calcuPayment();
+	string toString();
 };
