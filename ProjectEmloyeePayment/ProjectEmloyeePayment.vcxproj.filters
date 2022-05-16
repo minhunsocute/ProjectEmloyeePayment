@@ -30,6 +30,9 @@
     <ClInclude Include="Employ.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="EmployFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -47,7 +50,7 @@
     <ClCompile Include="Productemployees.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Employ.cpp">
+    <ClCompile Include="EmployFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
