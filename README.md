@@ -1,4 +1,4 @@
-# **PROJECT MOCK DATA GENERATOR**
+# **ProjectEmloyeePayment**
 
 
 ### Student's Information
@@ -9,11 +9,8 @@
 
 
 ### Requirements
-- [ ]  Generate randomly a number n in the range of [5, 10]
-- [ ]  Generate randomly n Students and add to the previous vector
-- [ ]  Overwrite and save and the students in the current vector back to the file "students.txt"
-- [ ]  Print out the average GPA of all students
-- [ ]  Print out all the students that have a GPA greater than the average GPA
+- [ ]  Read the file
+- [ ]  Print out all the employees' information and the final payment for each employee.
 
 
 ### How to compile and run project?
